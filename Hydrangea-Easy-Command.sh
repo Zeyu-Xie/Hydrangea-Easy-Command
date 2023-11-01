@@ -3,7 +3,7 @@ source ~/.zshrc
 source ~/.zprofile
 
 # The path of the config file
-srcPath="./commands.json"
+srcPath=$(realpath "commands.json")
 
 if command -v jq &>/dev/null; then
     # Nothing happens lol
