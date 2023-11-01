@@ -9,6 +9,6 @@
     },
     {
         "alias": "courses",
-        "command": "zsh ~/Desktop/Hydrangea-Course-Timetable/Hydrangea Course Timetable.sh"
+        "command": ""
     }
 ]
