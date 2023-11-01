@@ -3,7 +3,12 @@ source ~/.zshrc
 source ~/.zprofile
 
 # The path of the config file
-srcPath=$(realpath "commands.json")
+# scriptPath="$(cd "$(dirname "$BASH_SOURCE")" >/dev/null 2>&1 && pwd)"
+
+# 拼接 commands.json 文件的路径
+filePath="$(readlink -f "$0")"
+dirPath="$(dirname $filePath)"
+srcPath="$dirPath/commands.json"
 
 if command -v jq &>/dev/null; then
     # Nothing happens lol
