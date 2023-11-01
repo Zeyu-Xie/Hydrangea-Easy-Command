@@ -1,0 +1,10 @@
+[
+    {
+        "alias": "test",
+        "command": "Date"
+    },
+    {
+        "alias": "date",
+        "command": "Date"
+    }
+]
